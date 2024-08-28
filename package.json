@@ -9,7 +9,11 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./components/*": {
+            "import": "./dist/components/*",
+            "require": "./dist/components/*"
+      }
   },
   "files": [
     "dist"

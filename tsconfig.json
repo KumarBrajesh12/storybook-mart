@@ -1,16 +1,25 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
+    "target": "es5",
     "esModuleInterop": true,
-    "skipLibCheck": true,  // This might help avoid errors from third-party type definitions
-    "outDir": "./dist",
-    "declaration": true,
-    "declarationMap": true,
-    "module": "ESNext",
-    "target": "ESNext",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
     "jsx": "react",
-    "strict": true
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx"
+  ]
 }

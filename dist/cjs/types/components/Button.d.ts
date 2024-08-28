@@ -1,16 +1,5 @@
 import React from 'react';
-
-interface CheckboxProps {
-    isChecked?: boolean;
-    checkedColor?: string;
-    iconColor?: string;
-    label?: string;
-    labelColor?: string;
-    borderRadius?: string;
-    quantity?: number;
-}
-declare const Checkbox: React.FC<CheckboxProps>;
-
+import '../stories/button.css';
 interface ButtonProps {
     /**
      * Is this the primary call to action on the page?
@@ -34,5 +23,4 @@ interface ButtonProps {
     onClick?: () => void;
 }
 declare const Button: React.FC<ButtonProps>;
-
-export { Button, Checkbox };
+export default Button;

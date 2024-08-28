@@ -1,6 +1,21 @@
 /// <reference types="react" />
 import type { StoryObj } from '@storybook/react';
-declare const meta: Meta<({ primary, size, backgroundColor, label, ...props }: import("./Button").ButtonProps) => import("react").JSX.Element>;
+declare const meta: {
+    title: string;
+    component: ({ primary, size, backgroundColor, label, ...props }: import("./Button").ButtonProps) => import("react").JSX.Element;
+    parameters: {
+        layout: string;
+    };
+    tags: string[];
+    argTypes: {
+        backgroundColor: {
+            control: "color";
+        };
+    };
+    args: {
+        onClick: import("@vitest/spy").Mock<[], void>;
+    };
+};
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Primary: Story;

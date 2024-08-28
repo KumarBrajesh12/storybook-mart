@@ -1,7 +1,9 @@
 {
   "name": "storybook-mart",
   "version": "0.1.1",
-  "private": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -64,7 +66,7 @@
     "webpack": "^5.94.0"
   },
   "description": "storybook-mart",
-  "main": "index.html",
+  "main": "dist/index.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KumarBrajesh12/storybook-mart.git"
